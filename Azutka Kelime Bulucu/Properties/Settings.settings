@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Azutka_Kelime_Bulucu.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="KelimeGönderiktenSonraDur" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="HarfGönderdiktenSonraDur" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CheckKelimeG" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CheckHarfG" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BasılacakTus" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="LisansKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Kullaniciİsmi" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="KullaniciİsmiBool" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="GirişDurumu" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ProgramKodu" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailBirikimi" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Jokerler" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(A)(B)(C)(Ç)(D)(E)(F)(G)(Ğ)(H)(I)(İ)(J)(K)(L)(M)(N)(O)(Ö)(P)(R)(S)(Ş)(T)(U)(Ü)(V)(Y)(Z)</Value>
+    </Setting>
+    <Setting Name="KGSDBool" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HGSDBool" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ÜretilecekKelimeler" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(TK)(12)(11)(10)(9)(8)(7)(6)(5)(4)(3)</Value>
+    </Setting>
+    <Setting Name="KelimeGöndericiBool" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="JokerHarfBool" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="JokerAyarlar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HarfPuan" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;A1A&gt;&lt;B3B&gt;&lt;C4C&gt;&lt;Ç4Ç&gt;&lt;D3D&gt;&lt;E1E&gt;&lt;F7F&gt;&lt;G5G&gt;&lt;Ğ8Ğ&gt;&lt;H5H&gt;&lt;I2I&gt;&lt;İ1İ&gt;&lt;J10J&gt;&lt;K1K&gt;&lt;L1L&gt;&lt;M2M&gt;&lt;N1N&gt;&lt;O2O&gt;&lt;Ö7Ö&gt;&lt;P5P&gt;&lt;R1R&gt;&lt;S2S&gt;&lt;Ş4Ş&gt;&lt;T1T&gt;&lt;U2U&gt;&lt;Ü3Ü&gt;&lt;V7V&gt;&lt;Y3Y&gt;&lt;Z4Z&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

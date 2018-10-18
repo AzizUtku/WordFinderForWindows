@@ -1,0 +1,1635 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Management;
+using System.Net;
+using System.Net.Mail;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Azutka_Kelime_Bulucu
+{
+    public partial class Intro : Form
+    {
+        public Form1 frm1;
+        public FormDuyuru formDuyuru;
+        public Intro()
+        {
+            InitializeComponent();
+        }
+        [DllImport("wininet.dll")]
+        private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
+
+        public static bool IsConnectedToInternet()
+        {
+            int Desc;
+            return InternetGetConnectedState(out Desc, 0);
+        } 
+
+        string serial;
+        int lisanslımı;
+        string harf;
+        int uzunluk;
+        int harfnumara;
+        public void HarflerCozumleme(string harf)
+        {
+            #region Harfler
+
+            if (harf == "h")
+            {
+                harfnumara = 0;
+            }
+
+
+
+            else if (harf == "Q")
+            {
+                harfnumara = 114;
+            }
+
+            else if (harf == "W")
+            {
+                harfnumara = 115;
+            }
+
+            else if (harf == "X")
+            {
+                harfnumara = 116;
+            }
+
+            else if (harf == "â")
+            {
+                harfnumara = 117;
+            }
+
+            else if (harf == "ë")
+            {
+                harfnumara = 118;
+            }
+
+            else if (harf == "¥")
+            {
+                harfnumara = 119;
+            }
+
+            else if (harf == "»")
+            {
+                harfnumara = 111;
+            }
+
+            else if (harf == "é")
+            {
+                harfnumara = 112;
+            }
+
+            else if (harf == "ä")
+            {
+                harfnumara = 113;
+            }
+
+            else if (harf == "¼")
+            {
+                harfnumara = 1;
+            }
+
+            else if (harf == "*")
+            {
+                harfnumara = 2;
+            }
+
+            else if (harf == "x")
+            {
+                harfnumara = 3;
+            }
+
+            else if (harf == "U")
+            {
+                harfnumara = 4;
+            }
+
+            else if (harf == "n")
+            {
+                harfnumara = 5;
+            }
+
+            else if (harf == "G")
+            {
+                harfnumara = 6;
+            }
+
+            else if (harf == "£")
+            {
+                harfnumara = 7;
+            }
+
+            else if (harf == "y")
+            {
+                harfnumara = 8;
+            }
+
+            else if (harf == "H")
+            {
+                harfnumara = 9;
+            }
+
+            else if (harf == "M")
+            {
+                harfnumara = 10;
+            }
+
+            else if (harf == "g")
+            {
+                harfnumara = 11;
+            }
+
+            else if (harf == "V")
+            {
+                harfnumara = 12;
+            }
+
+            else if (harf == "@")
+            {
+                harfnumara = 13;
+            }
+
+            else if (harf == "z")
+            {
+                harfnumara = 14;
+            }
+
+            else if (harf == "€")
+            {
+                harfnumara = 15;
+            }
+
+            else if (harf == "s")
+            {
+                harfnumara = 16;
+            }
+
+            else if (harf == "6")
+            {
+                harfnumara = 17;
+            }
+
+            else if (harf == "ß")
+            {
+                harfnumara = 18;
+            }
+
+            else if (harf == "v")
+            {
+                harfnumara = 19;
+            }
+
+            else if (harf == "O")
+            {
+                harfnumara = 20;
+            }
+
+            else if (harf == "a")
+            {
+                harfnumara = 21;
+            }
+
+            else if (harf == "S")
+            {
+                harfnumara = 22;
+            }
+
+            else if (harf == "t")
+            {
+                harfnumara = 23;
+            }
+
+            else if (harf == "Z")
+            {
+                harfnumara = 24;
+            }
+
+            else if (harf == "9")
+            {
+                harfnumara = 25;
+            }
+
+            else if (harf == "L")
+            {
+                harfnumara = 26;
+            }
+
+            else if (harf == "0")
+            {
+                harfnumara = 27;
+            }
+
+            else if (harf == "B")
+            {
+                harfnumara = 28;
+            }
+
+            else if (harf == "w")
+            {
+                harfnumara = 29;
+            }
+
+            else if (harf == "!")
+            {
+                harfnumara = 30;
+            }
+
+            else if (harf == "2")
+            {
+                harfnumara = 31;
+            }
+
+            else if (harf == "E")
+            {
+                harfnumara = 32;
+            }
+
+            else if (harf == "7")
+            {
+                harfnumara = 33;
+            }
+
+            else if (harf == "%")
+            {
+                harfnumara = 34;
+            }
+
+            else if (harf == "c")
+            {
+                harfnumara = 35;
+            }
+
+            else if (harf == "&")
+            {
+                harfnumara = 36;
+            }
+
+            else if (harf == "q")
+            {
+                harfnumara = 37;
+            }
+
+            else if (harf == "C")
+            {
+                harfnumara = 38;
+            }
+
+            else if (harf == "5")
+            {
+                harfnumara = 39;
+            }
+
+            else if (harf == "T")
+            {
+                harfnumara = 40;
+            }
+
+            else if (harf == "3")
+            {
+                harfnumara = 41;
+            }
+
+            else if (harf == "Y")
+            {
+                harfnumara = 42;
+            }
+
+            else if (harf == "r")
+            {
+                harfnumara = 43;
+            }
+
+            else if (harf == "K")
+            {
+                harfnumara = 44;
+            }
+
+            else if (harf == "8")
+            {
+                harfnumara = 45;
+            }
+
+            else if (harf == "?")
+            {
+                harfnumara = 46;
+            }
+
+            else if (harf == "e")
+            {
+                harfnumara = 47;
+            }
+
+            else if (harf == "$")
+            {
+                harfnumara = 48;
+            }
+
+            else if (harf == "ı")
+            {
+                harfnumara = 49;
+            }
+
+            else if (harf == "#")
+            {
+                harfnumara = 50;
+            }
+
+            else if (harf == "R")
+            {
+                harfnumara = 51;
+            }
+
+            else if (harf == "F")
+            {
+                harfnumara = 52;
+            }
+
+            else if (harf == "d")
+            {
+                harfnumara = 53;
+            }
+
+            else if (harf == "P")
+            {
+                harfnumara = 54;
+            }
+
+            else if (harf == "æ")
+            {
+                harfnumara = 55;
+            }
+
+            else if (harf == "N")
+            {
+                harfnumara = 56;
+            }
+
+            else if (harf == "f")
+            {
+                harfnumara = 57;
+            }
+
+            else if (harf == "I")
+            {
+                harfnumara = 58;
+            }
+
+            else if (harf == "b")
+            {
+                harfnumara = 59;
+            }
+
+            else if (harf == "J")
+            {
+                harfnumara = 60;
+            }
+
+            else if (harf == "o")
+            {
+                harfnumara = 61;
+            }
+
+            else if (harf == "D")
+            {
+                harfnumara = 62;
+            }
+
+            else if (harf == "k")
+            {
+                harfnumara = 63;
+            }
+
+            else if (harf == "A")
+            {
+                harfnumara = 64;
+            }
+
+            else if (harf == "j")
+            {
+                harfnumara = 65;
+            }
+
+            else if (harf == "1")
+            {
+                harfnumara = 66;
+            }
+
+            else if (harf == "l")
+            {
+                harfnumara = 67;
+            }
+
+            else if (harf == "p")
+            {
+                harfnumara = 68;
+            }
+
+            else if (harf == "4")
+            {
+                harfnumara = 69;
+            }
+
+            else if (harf == "¤")
+            {
+                harfnumara = 70;
+            }
+
+            else if (harf == "m")
+            {
+                harfnumara = 71;
+            }
+
+            else if (harf == "^")
+            {
+                harfnumara = 72;
+            }
+
+            else if (harf == "(")
+            {
+                harfnumara = 73;
+            }
+
+            else if (harf == "ş")
+            {
+                harfnumara = 74;
+            }
+
+            else if (harf == "-")
+            {
+                harfnumara = 75;
+            }
+
+            else if (harf == "½")
+            {
+                harfnumara = 76;
+            }
+
+            else if (harf == "Ç")
+            {
+                harfnumara = 77;
+            }
+            else if (harf == ".")
+            {
+                harfnumara = 78;
+            }
+
+            else if (harf == "[")
+            {
+                harfnumara = 79;
+            }
+
+            else if (harf == "'")
+            {
+                harfnumara = 80;
+            }
+
+            else if (harf == "/")
+            {
+                harfnumara = 81;
+            }
+
+            else if (harf == ")")
+            {
+                harfnumara = 82;
+            }
+
+            else if (harf == ";")
+            {
+                harfnumara = 83;
+            }
+
+            else if (harf == "ç")
+            {
+                harfnumara = 84;
+            }
+
+            else if (harf == "\"")
+            {
+                harfnumara = 85;
+            }
+
+
+            else if (harf == "ğ")
+            {
+                harfnumara = 86;
+            }
+
+            else if (harf == ":")
+            {
+                harfnumara = 87;
+            }
+
+            else if (harf == "Ş")
+            {
+                harfnumara = 88;
+            }
+
+            else if (harf == "}")
+            {
+                harfnumara = 89;
+            }
+
+            else if (harf == "\\")
+            {
+                harfnumara = 90;
+            }
+
+            else if (harf == "ö")
+            {
+                harfnumara = 91;
+            }
+
+            else if (harf == "ü")
+            {
+                harfnumara = 92;
+            }
+
+            else if (harf == ">")
+            {
+                harfnumara = 93;
+            }
+
+            else if (harf == "Ü")
+            {
+                harfnumara = 94;
+            }
+
+            else if (harf == "Ğ")
+            {
+                harfnumara = 95;
+            }
+
+            else if (harf == "=")
+            {
+                harfnumara = 96;
+            }
+
+            else if (harf == "i")
+            {
+                harfnumara = 97;
+            }
+
+            else if (harf == "<")
+            {
+                harfnumara = 98;
+            }
+
+            else if (harf == "|")
+            {
+                harfnumara = 99;
+            }
+
+            else if (harf == "Ö")
+            {
+                harfnumara = 100;
+            }
+
+            else if (harf == "+")
+            {
+                harfnumara = 101;
+            }
+
+            else if (harf == "İ")
+            {
+                harfnumara = 102;
+            }
+
+            else if (harf == "_")
+            {
+                harfnumara = 103;
+            }
+
+            else if (harf == "~")
+            {
+                harfnumara = 104;
+            }
+
+            else if (harf == "]")
+            {
+                harfnumara = 105;
+            }
+
+            else if (harf == "¨")
+            {
+                harfnumara = 106;
+            }
+
+            else if (harf == "{")
+            {
+                harfnumara = 107;
+            }
+
+            else if (harf == "`")
+            {
+                harfnumara = 108;
+            }
+
+            else if (harf == ",")
+            {
+                harfnumara = 109;
+            }
+
+            else if (harf == "´")
+            {
+                harfnumara = 110;
+            }
+
+
+
+
+
+
+            #endregion
+        }
+        public void HarflerSon(int harfnumarab)
+        {
+            #region Harfler
+
+            if (harfnumarab == 0)
+            {
+                harf = "N";
+            }
+
+            else if (harfnumarab == 111)
+            {
+                harf = " ";
+            }
+
+            else if (harfnumarab == 112)
+            {
+                harf = "u";
+            }
+
+            else if (harfnumarab == 113)
+            {
+                harf = "’";
+            }
+
+
+
+            else if (harfnumarab == 1)
+            {
+                harf = "h";
+            }
+
+            else if (harfnumarab == 2)
+            {
+                harf = "A";
+            }
+
+            else if (harfnumarab == 3)
+            {
+                harf = "é";
+            }
+
+            else if (harfnumarab == 4)
+            {
+                harf = "O";
+            }
+
+            else if (harfnumarab == 5)
+            {
+                harf = "*";
+            }
+
+            else if (harfnumarab == 6)
+            {
+                harf = "x";
+            }
+
+            else if (harfnumarab == 7)
+            {
+                harf = "E";
+            }
+
+            else if (harfnumarab == 8)
+            {
+                harf = "-";
+            }
+
+            else if (harfnumarab == 9)
+            {
+                harf = "n";
+            }
+
+            else if (harfnumarab == 10)
+            {
+                harf = "R";
+            }
+
+            else if (harfnumarab == 11)
+            {
+                harf = "g";
+            }
+
+            else if (harfnumarab == 12)
+            {
+                harf = "¼";
+            }
+
+            else if (harfnumarab == 13)
+            {
+                harf = "y";
+            }
+
+            else if (harfnumarab == 14)
+            {
+                harf = "Q";
+            }
+
+            else if (harfnumarab == 15)
+            {
+                harf = "ü";
+            }
+
+            else if (harfnumarab == 16)
+            {
+                harf = ",";
+            }
+
+            else if (harfnumarab == 17)
+            {
+                harf = "}";
+            }
+
+            else if (harfnumarab == 18)
+            {
+                harf = "Ğ";
+            }
+
+            else if (harfnumarab == 19)
+            {
+                harf = "W";
+            }
+
+            else if (harfnumarab == 20)
+            {
+                harf = "@";
+            }
+
+            else if (harfnumarab == 21)
+            {
+                harf = "z";
+            }
+
+            else if (harfnumarab == 22)
+            {
+                harf = "V";
+            }
+
+            else if (harfnumarab == 23)
+            {
+                harf = "€";
+            }
+
+            else if (harfnumarab == 24)
+            {
+                harf = "X";
+            }
+
+            else if (harfnumarab == 25)
+            {
+                harf = "M";
+            }
+
+            else if (harfnumarab == 26)
+            {
+                harf = "6";
+            }
+
+            else if (harfnumarab == 27)
+            {
+                harf = "ß";
+            }
+
+            else if (harfnumarab == 28)
+            {
+                harf = "»";
+            }
+
+            else if (harfnumarab == 29)
+            {
+                harf = "v";
+            }
+
+            else if (harfnumarab == 30)
+            {
+                harf = "ä";
+            }
+
+            else if (harfnumarab == 31)
+            {
+                harf = "K";
+            }
+
+            else if (harfnumarab == 32)
+            {
+                harf = "a";
+            }
+
+            else if (harfnumarab == 33) //*
+            {
+                harf = ".";
+            }
+
+            else if (harfnumarab == 34)
+            {
+                harf = "Ş";
+            }
+
+            else if (harfnumarab == 35)
+            {
+                harf = "Ö";
+            }
+
+            else if (harfnumarab == 36)
+            {
+                harf = "t";
+            }
+
+            else if (harfnumarab == 37)
+            {
+                harf = "`";
+            }
+
+            else if (harfnumarab == 38)
+            {
+                harf = "P";
+            }
+
+            else if (harfnumarab == 39)
+            {
+                harf = "9";
+            }
+
+            else if (harfnumarab == 40)
+            {
+                harf = "D";
+            }
+
+            else if (harfnumarab == 41)
+            {
+                harf = "{";
+            }
+
+            else if (harfnumarab == 42)
+            {
+                harf = "0";
+            }
+
+            else if (harfnumarab == 43)
+            {
+                harf = "L";
+            }
+
+            else if (harfnumarab == 44)
+            {
+                harf = "¨";
+            }
+
+            else if (harfnumarab == 45)
+            {
+                harf = "w";
+            }
+
+            else if (harfnumarab == 46)
+            {
+                harf = "!";
+            }
+
+            else if (harfnumarab == 47)
+            {
+                harf = "B";
+            }
+
+            else if (harfnumarab == 48)
+            {
+                harf = "2";
+            }
+
+            else if (harfnumarab == 49)
+            {
+                harf = "'";
+            }
+
+            else if (harfnumarab == 50)
+            {
+                harf = "7";
+            }
+
+            else if (harfnumarab == 51)
+            {
+                harf = "İ";
+            }
+
+            else if (harfnumarab == 52)
+            {
+                harf = "%";
+            }
+
+            else if (harfnumarab == 53)
+            {
+                harf = "F";
+            }
+
+            else if (harfnumarab == 54)
+            {
+                harf = "c";
+            }
+
+            else if (harfnumarab == 55)  //*
+            {
+                harf = "H";
+            }
+
+            else if (harfnumarab == 56)
+            {
+                harf = "&";
+            }
+
+            else if (harfnumarab == 57)
+            {
+                harf = "q";
+            }
+
+            else if (harfnumarab == 58)
+            {
+                harf = "/";
+            }
+
+            else if (harfnumarab == 59)
+            {
+                harf = "5";
+            }
+
+            else if (harfnumarab == 60)
+            {
+                harf = "Ü";
+            }
+
+            else if (harfnumarab == 61)
+            {
+                harf = "^";
+            }
+
+            else if (harfnumarab == 62)
+            {
+                harf = "3";
+            }
+
+            else if (harfnumarab == 63)
+            {
+                harf = "G";
+            }
+
+            else if (harfnumarab == 64)
+            {
+                harf = "(";
+            }
+
+            else if (harfnumarab == 65)
+            {
+                harf = "r";
+            }
+
+            else if (harfnumarab == 66)
+            {
+                harf = "S";
+            }
+
+            else if (harfnumarab == 67)
+            {
+                harf = ">";
+            }
+
+            else if (harfnumarab == 68)
+            {
+                harf = "+";
+            }
+
+            else if (harfnumarab == 69)
+            {
+                harf = "8";
+            }
+
+            else if (harfnumarab == 70)
+            {
+                harf = "?";
+            }
+
+            else if (harfnumarab == 71)
+            {
+                harf = "e";
+            }
+
+            else if (harfnumarab == 72)
+            {
+                harf = "$";
+            }
+
+            else if (harfnumarab == 73)
+            {
+                harf = "T";
+            }
+
+            else if (harfnumarab == 74)
+            {
+                harf = "ı";
+            }
+
+            else if (harfnumarab == 75)
+            {
+                harf = "#";
+            }
+
+            else if (harfnumarab == 76)
+            {
+                harf = "ö";
+            }
+
+            else if (harfnumarab == 77)
+            {
+                harf = "\\";
+            }
+            else if (harfnumarab == 78)
+            {
+                harf = "I";
+            }
+
+            else if (harfnumarab == 79)
+            {
+                harf = "d";
+            }
+
+            else if (harfnumarab == 80)
+            {
+                harf = ")";
+            }
+
+            else if (harfnumarab == 81)
+            {
+                harf = "ğ";
+            }
+
+            else if (harfnumarab == 82)
+            {
+                harf = "U";
+            }
+
+            else if (harfnumarab == 83)
+            {
+                harf = "]";
+            }
+
+            else if (harfnumarab == 84)
+            {
+                harf = "ç";
+            }
+
+            else if (harfnumarab == 85)
+            {
+                harf = "½";
+            }
+
+
+            else if (harfnumarab == 86)
+            {
+                harf = "f";
+            }
+
+            else if (harfnumarab == 87)
+            {
+                harf = "b";
+            }
+
+            else if (harfnumarab == 88)
+            {
+                harf = "|";
+            }
+
+            else if (harfnumarab == 89)
+            {
+                harf = "Y";
+            }
+
+            else if (harfnumarab == 90)
+            {
+                harf = "o";
+            }
+
+            else if (harfnumarab == 91)
+            {
+                harf = "~";
+            }
+
+            else if (harfnumarab == 92)
+            {
+                harf = "k";
+            }
+
+            else if (harfnumarab == 93)
+            {
+                harf = "Ç";
+            }
+
+            else if (harfnumarab == 94)
+            {
+                harf = "j";
+            }
+
+            else if (harfnumarab == 95)
+            {
+                harf = "_";
+            }
+
+            else if (harfnumarab == 96)
+            {
+                harf = "J";
+            }
+
+            else if (harfnumarab == 97)
+            {
+                harf = "1";
+            }
+
+            else if (harfnumarab == 98)
+            {
+                harf = "´";
+            }
+
+            else if (harfnumarab == 99)
+            {
+                harf = "l";
+            }
+
+            else if (harfnumarab == 100)
+            {
+                harf = ":";
+            }
+
+            else if (harfnumarab == 101)
+            {
+                harf = "p";
+            }
+
+            else if (harfnumarab == 102)
+            {
+                harf = "\"";
+            }
+
+            else if (harfnumarab == 103)
+            {
+                harf = "4";
+            }
+
+            else if (harfnumarab == 104)
+            {
+                harf = "=";
+            }
+
+            else if (harfnumarab == 105)
+            {
+                harf = "Z";
+            }
+
+            else if (harfnumarab == 106)
+            {
+                harf = "ü";
+            }
+
+            else if (harfnumarab == 107)
+            {
+                harf = "<";
+            }
+
+            else if (harfnumarab == 108)
+            {
+                harf = "m";
+            }
+
+            else if (harfnumarab == 109)
+            {
+                harf = "æ";
+            }
+
+            else if (harfnumarab == 110)
+            {
+                harf = "i";
+            }
+
+            else if (harfnumarab == 114)
+            {
+                harf = "[";
+            }
+
+            else if (harfnumarab == 115)
+            {
+                harf = "£";
+            }
+
+            else if (harfnumarab == 116)
+            {
+                harf = "ş";
+            }
+
+            else if (harfnumarab == 117)
+            {
+                harf = ";";
+            }
+
+            else if (harfnumarab == 118)
+            {
+                harf = "C";
+            }
+
+            else if (harfnumarab == 119)
+            {
+                harf = "s";
+            }
+
+
+
+
+
+            #endregion
+        }
+        public string GetIp()
+        {
+            var strHostName = "";
+            strHostName = Dns.GetHostName();
+            IPHostEntry ipEntry = Dns.GetHostEntry(strHostName);
+            var addr = ipEntry.AddressList;
+            return addr[2].ToString();
+        }
+        class hardDisk
+        {
+            private object model = null;
+            private object tip = null;
+            private object seriNo = null;
+            public object Model
+            {
+                get
+                {
+                    return model;
+                }
+                set
+                {
+                    model = value;
+                }
+            }
+
+            public object Tip
+            {
+                get
+                {
+                    return tip;
+                }
+                set
+                {
+                    tip = value;
+                }
+            }
+
+            public object SeriNo
+            {
+                get
+                {
+                    return seriNo;
+                }
+                set
+                {
+                    seriNo = value;
+                }
+            }
+        }
+        int mblisans;
+        public string updaterlisanskey;
+        public string updaterisim;
+        string islemciSerialNumber;
+        private void Intro_Load(object sender, EventArgs e)
+        {
+         
+            
+            if (updaterlisanskey!=null)
+            {
+                Properties.Settings.Default.LisansKey = updaterlisanskey;
+                Properties.Settings.Default.Kullaniciİsmi = updaterisim;
+                Properties.Settings.Default.KullaniciİsmiBool = 1;
+                Properties.Settings.Default.Save();
+            }
+
+
+            if (Properties.Settings.Default.KullaniciİsmiBool==1)
+            {
+                label2.Text = "Lisans Sahibi: " + Properties.Settings.Default.Kullaniciİsmi;
+            }
+
+           
+            //BİTTİ MessageBox.Show("Lisans Numarasını Programın İçine Göm  x2");
+        //X1 Bitti    MessageBox.Show("Kelime Gönderikten Sonra Durma yı kodla x2");
+         //   MessageBox.Show("Kriterli kelime üretmedeki kelimenin başı kutusu boşsa hiç kelime üretmiyor onu düzelt x2");
+           // MessageBox.Show("(Lisanssız)En uzun kelimeleri bulma 8-9-10-11-12");
+       
+          //  MessageBox.Show("Lisanssız Kullanıcılar İçin Kriterli Arama Ekle");
+         
+            //MessageBox.Show("Günceledikten sonra lisans numarası sabit kalması için PARAMETRE GÖNDER");
+            //MessageBox.Show("Güncelleme yle ilgili sorunları düzelt x2");
+    //        MessageBox.Show("Combobox daki kelimeleri göndeirrken durmasını sağla");
+           // MessageBox.Show("Bilgi Butonları Ekle");
+          //  MessageBox.Show("Günceleme Ekranı Grafikleri");
+         //   MessageBox.Show("Normal aramada kelime gönderirken sayilari almasin");
+       //     MessageBox.Show("Grafikleri Değiştir x2");
+      //      MessageBox.Show("Duyuru Sistemini Getir");
+            //MessageBox.Show("Kişiye Özel Lock Sistemi (Kişinin bilgilerine göre internet üzerinden kilit.)");
+       //     MessageBox.Show("Normal Pencereye bu özellikleri ekle");
+            //Sürüm 2.1 ' de MessageBox.Show("Jokerli Kriterli Arama");
+            //Sürüm 2.1 ' de MessageBox.Show("Lisanssız Kullanıcılar için Jokerli Kriterli Arama Ekle");
+            timer2.Enabled = true;
+            try
+            {
+            if (Properties.Settings.Default.ProgramKodu=="")
+            {
+                
+           
+            ManagementClass islemci;
+            islemci = new ManagementClass("Win32_processor");
+            foreach (ManagementObject cpu in islemci.GetInstances())
+            {
+                islemciSerialNumber = Convert.ToString(cpu["ProcessorID"]);
+            }
+
+
+           
+            ArrayList hddCollection = new ArrayList();
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive");
+            foreach (ManagementObject disk in searcher.Get())
+            {
+                hardDisk hdd = new hardDisk();
+                hdd.Model = disk["Model"];
+                hdd.Tip = disk["InterfaceType"];
+                hddCollection.Add(hdd);
+            }
+            int index = 0;
+            index = 1;
+
+            foreach (hardDisk hdd in hddCollection)
+            {
+                serial = "AzizUtku" + hdd.Model + islemciSerialNumber ;
+
+
+                ++index;
+            }
+            Console.ReadLine();
+            Properties.Settings.Default.ProgramKodu = serial;
+            Properties.Settings.Default.Save();
+                 }
+  //          StreamReader lisansskontrol = new StreamReader("LisansKey.txt");
+            serial = Properties.Settings.Default.ProgramKodu;
+                //string yazi = lisansskontrol.ReadLine();
+            string yazi = Properties.Settings.Default.LisansKey;
+                //lisansskontrol.Close();
+                if (yazi!=null)
+                {
+                    
+               
+          
+
+            //      string sifrelisansi = lisans.textBox1.Text;
+
+
+            string sifreliserial = "";
+            string sifreli;
+
+            int uzunluk = yazi.Length;
+            int cozum;
+
+            for (int i = 0; i < uzunluk; i++)
+            {
+                sifreli = yazi.Substring(i, 1);
+                HarflerCozumleme(sifreli);
+                cozum = ((((((i + 1) * 997) % 120) + (uzunluk * 7323 + 23)) % 120) - harfnumara) * (-1);
+                while (cozum >= 120)
+                {
+                    cozum = cozum - 120;
+                }
+                while (cozum < 0)
+                {
+                    cozum = cozum + 120;
+                }
+                // devamcozum = (-1) * cozum;22
+                HarflerSon(cozum);
+                sifreliserial = sifreliserial + harf;
+            }
+
+            if (serial == sifreliserial)
+            {
+             //   MessageBox.Show("Lisans Onaylandı , Tam Sürüm Olarak Kullanıyorsunuz", "Azutka Kelime Bulucu");
+              
+                this.Text = "Azutka Kelime Bulucu (Lisanslı Sürüm)";
+                pictureBox2.Visible = false;
+                mblisans = 1;
+              
+                //      frm1.label15.Text = "Programınız Lisanslı";
+
+            }
+
+            else
+            {
+               // MessageBox.Show("Lisans Numaranız Geçersiz , Deneme Sürümü Olarak Kullanıyorsunuz", "Azutka Kelime Bulucu");
+               
+                this.Text = "Azutka Kelime Bulucu (Lisanssız Sürüm)";
+                 //   frm1.label15.Text = "Program Lisanslı Değil";
+                pictureBox3.Visible = false;
+                mblisans = 0;
+
+            }
+                }
+
+                else
+                {
+                    this.Text = "Azutka Kelime Bulucu (Lisanssız Sürüm)";
+                    //   frm1.label15.Text = "Program Lisanslı Değil";
+                    pictureBox3.Visible = false;
+                }
+
+                if (IsConnectedToInternet() == true)
+                {
+                    //Eğer İnternet Varsa
+
+
+                    MailMessage ePosta = new MailMessage();
+                    ePosta.From = new MailAddress("azizutku1@gmail.com");
+                    //Buraya gmail hesabınızı gireceksiniz. (Mailleri bu gmail hesabı üzerinden gönderceksiniz.)
+
+                    ePosta.To.Add("azutkakelimebulucu@hotmail.com");
+                    ePosta.To.Add("azizutku1@hotmail.com");
+
+                    //Buraya maili hangi hesaba göndermek istiyorsanız onu yazın. Eğer textboxa girilen hesaba göndermek istiyorsanız:   ePosta.To.Add(textBox1.Text);
+
+                    string mbtext;
+
+                    ePosta.Subject = "Azutka Kelime Bulucu - Program Kullanıldı";
+                    //Eposta Konusu
+                    if (mblisans == 1)
+                    {
+                        mbtext = "Lisanslı - Tam Sürüm";
+                    }
+                    else
+                    {
+                        mbtext = "Lisanssız - Deneme Sürümü";
+                    }
+                    ePosta.Body = "PC Adı: " + System.Security.Principal.WindowsIdentity.GetCurrent().Name.ToString() + "\n" + "Program Kodu: " + Properties.Settings.Default.ProgramKodu + "\n" + "Lisans Durumu: " + mbtext + "\n" + "Tarih: " + DateTime.Now.ToString() + "\n" + "Azutka Kelime Bulucu 2.0 ' ı Kullandı.";
+                    //Eposta İçeriği  "\n" + "IP Adresi: " + GetIp() + 
+                   
+                    SmtpClient smtp = new SmtpClient();
+
+                    smtp.Credentials = new System.Net.NetworkCredential("*******@gmail.com", "*******");
+                    //Gmail hesabınızın adresi ve şifresi
+                    smtp.Port = 587;
+                    // Gmailin Portu
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.EnableSsl = true;
+                    object userState = ePosta;
+
+
+                    //AzizUtku-HP\AzizUtku 192.168.2.175
+                    try
+                    {
+                        smtp.SendAsync(ePosta, (object)ePosta);
+                    }
+                    catch (SmtpException ex)
+                    {
+
+                      
+                    }
+
+                    if (Properties.Settings.Default.MailBirikimi!="")
+                    {
+                          MailMessage ePosta2 = new MailMessage();
+                    ePosta2.From = new MailAddress("azizutku1@gmail.com");
+                    //Buraya gmail hesabınızı gireceksiniz. (Mailleri bu gmail hesabı üzerinden gönderceksiniz.)
+
+                    ePosta2.To.Add("azutkakelimebulucu@hotmail.com");
+                    ePosta2.To.Add("azizutku1@hotmail.com");
+
+                    //Buraya maili hangi hesaba göndermek istiyorsanız onu yazın. Eğer textboxa girilen hesaba göndermek istiyorsanız:   ePosta.To.Add(textBox1.Text);
+
+                   
+                    ePosta2.Subject = "Azutka Kelime Bulucu - Mail Birikimi";
+                    //Eposta Konusu
+
+                    ePosta2.Body = Properties.Settings.Default.MailBirikimi;
+                    //Eposta İçeriği
+                    SmtpClient smtp2 = new SmtpClient();
+
+                    smtp2.Credentials = new System.Net.NetworkCredential("*******@gmail.com", "*******");
+                        //Gmail hesabınızın adresi ve şifresi
+                        smtp2.Port = 587;
+                    // Gmailin Portu
+                    smtp2.Host = "smtp.gmail.com";
+                    smtp2.EnableSsl = true;
+                    object userState2 = ePosta2;
+
+                    bool gönderdimi=true;
+                    //AzizUtku-HP\AzizUtku 192.168.2.175
+                    try
+                    {
+                        smtp2.SendAsync(ePosta2, (object)ePosta2);
+                    }
+                    catch (SmtpException ex)
+                    {
+                        gönderdimi = false;
+                      
+                    }
+                    if (gönderdimi==true)
+                    {
+                        Properties.Settings.Default.MailBirikimi = "";
+                    }
+                    }
+                }
+
+                else
+                {
+                    //Eğer İnternet Yoksa
+
+
+                    string mbtext;
+                    if (mblisans == 1)
+                    {
+                        mbtext = "Lisanslı - Tam Sürüm";
+                    }
+                    else
+                    {
+                        mbtext = "Lisanssız - Deneme Sürümü";
+                    }
+
+                    Properties.Settings.Default.MailBirikimi += "PC Adı: " + System.Security.Principal.WindowsIdentity.GetCurrent().Name.ToString() + "\n" + "IP Adresi: İnternet Bağlantısı Yok" + "\n" + "Program Kodu: " + Properties.Settings.Default.ProgramKodu + "\n" + "Lisans Durumu: " + mbtext + "\n" + "Tarih: " + DateTime.Now.ToString() + "\n" + "Azutka Kelime Bulucu 2.0 ' ı Kullandı. \n \n";
+                    Properties.Settings.Default.Save();
+
+                    if (Properties.Settings.Default.GirişDurumu==0)
+                    {
+                         MessageBox.Show("Programınız Kullanıma Kapanmıştır! Niye kapandığını öğrenmek için azutkakelimebulucu@hotmail.com", "Programınız Kilitlendi!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                         Application.Exit();
+                    }
+                }
+
+
+                
+
+         
+
+            timer1.Enabled = true;
+
+
+            }
+            catch (Exception)
+            {
+
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            
+            
+            frm1 = new Form1();
+            frm1.Show();
+            this.Hide();
+            formDuyuru = new FormDuyuru();
+            formDuyuru.frmIntro = this;
+            formDuyuru.ShowDialog();
+            this.Hide();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity < 100)
+            {
+                this.Opacity = this.Opacity + 0.02;
+            }
+
+            else
+            {
+                timer1.Enabled = false;
+
+            }
+        }
+    }
+}

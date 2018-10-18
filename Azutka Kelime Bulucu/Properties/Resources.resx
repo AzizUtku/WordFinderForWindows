@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="1NormalArama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1NormalArama2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1lisans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1lisans2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Duyuru      " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Duyuru      .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1bul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1bul3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Hakkında" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Hakkında.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gizle-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gizle-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1NormalAramao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1NormalAramao11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1Hepsini Gönder-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Hepsini Gönder-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lisanssızkelime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lisanssızkelime1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    İptal  " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    İptal  .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1İlk 20 Kelimeyi Göndero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1İlk 20 Kelimeyi Göndero2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisanskontroltext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisanskontroltext2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1En Uzun Kelimeyi Gönder-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1En Uzun Kelimeyi Gönder-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Hakkında-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Hakkında-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gönder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gönder11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul   -over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul   -over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lisanslıkelime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lisanslıkelime1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisanssızkontroltext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisanssızkontroltext2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="normalaramaa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\normalaramaa11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manuel Joker-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manuel Joker-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1En Uzun Kelimeyi Göndero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1En Uzun Kelimeyi Göndero2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama-over4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans-over21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans-over211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="normalarama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\normalarama2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="azutkakelime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\azutkakelime2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1lisans1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1lisans11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aktive Et-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aktive Et-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aktive Et-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aktive Et-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Kaydet-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Kaydet-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading491" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading4911.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lisanssız1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lisanssız11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1İlk 10 Kelimeyi Göndero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1İlk 10 Kelimeyi Göndero2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="az3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\az3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans-over2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans-over22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1Hepsini Göndero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Hepsini Göndero2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="azutkakelime1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\azutkakelime11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="normalarama1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\normalarama11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kopyala-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kopyala-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="az" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\az.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lisanssız" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lisanssız2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1lisanso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1lisanso2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans-over11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans-over111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1lisanso1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1lisanso11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kopyala-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kopyala-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul   1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul   11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manuel Joker-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manuel Joker-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul     -down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul     -down2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aktive Et1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aktive Et11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gizle-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gizle-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1Bulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Bulo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Güncelle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Güncelle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gönder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gönder2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gönder-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gönder-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AzutkaArkaplanSürüm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AzutkaArkaplanSürüm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1İlk 20 Kelimeyi Gönder-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1İlk 20 Kelimeyi Gönder-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1NormalArama1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1NormalArama11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama-over3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama-over31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1İlk 20 Kelimeyi Gönder-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1İlk 20 Kelimeyi Gönder-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kopyala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kopyala2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lisanslı1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lisanslı11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisanskontroltext1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisanskontroltext11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1En Uzun Kelimeyi Gönder-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1En Uzun Kelimeyi Gönder-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manuel Joker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manuel Joker2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aktive Et" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aktive Et2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battle1600x1200yeni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battle1600x1200yeni1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1İlk 20 Kelimeyi Göndero1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1İlk 20 Kelimeyi Göndero11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama-over12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Duyuru      -over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Duyuru      -over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1İlk 10 Kelimeyi Gönder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1İlk 10 Kelimeyi Gönder2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1NormalAramao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1NormalAramao2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Kaydet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Kaydet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1bul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1bul11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lisanslı" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lisanslı2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gönder-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gönder-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul-over2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama-over2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama-over21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul   " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul   2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="normalaramaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\normalaramaa2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul     1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul     11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul   -over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul   -over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisanssızkontroltext1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisanssızkontroltext11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans-over4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul     " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul     2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans-over12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1Bulo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Bulo11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans-over3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans-over31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Ayarlar-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Ayarlar-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1İlk 10 Kelimeyi Göndero1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1İlk 10 Kelimeyi Göndero11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul     -down1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul     -down11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1Hepsini Göndero1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Hepsini Göndero11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kırmızı" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kırmızı.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    İptal  -down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    İptal  -down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manuel Joker1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manuel Joker11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1İlk 10 Kelimeyi Gönder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1İlk 10 Kelimeyi Gönder11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama-over11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama-over111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fotoğraf0135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fotoğraf0135.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading492.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1375116459_Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1375116459_Help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yesil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yesil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Güncelle-over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Güncelle-over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1Hepsini Gönder-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Hepsini Gönder-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1bul2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1bul21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gizle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gizle11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Hakkında-over-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Hakkında-over-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bul-over1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bul-over11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kopyala1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kopyala11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Hakkında-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Hakkında-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1En Uzun Kelimeyi Göndero1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1En Uzun Kelimeyi Göndero11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detaylı Arama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detaylı Arama4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="    Ayarlar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\    Ayarlar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="az2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\az2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gizle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gizle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emailFormBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emailFormBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisans3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lisans31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AzutkaArkaplanSürüm1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AzutkaArkaplanSürüm1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

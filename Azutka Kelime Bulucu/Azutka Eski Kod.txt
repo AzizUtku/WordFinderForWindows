@@ -1,0 +1,88 @@
+
+
+
+
+                for (int i = 0; i < Listekelimeler.Count; i++)
+            {
+                kelime = Listekelimeler[i].ToString();
+                int kelimeuzunluguu = Listekelimeler[i].Length;
+                int txtuzunlugu = textBox1.Text.Length;
+                if (lisanslýmý == 8)
+                {
+
+                 
+
+                    if (checkBox11.Checked == true)
+                    {
+
+
+                        if (txtKBAS.Text != "" || txtKSON.Text != "")
+                        {
+                            if (kontrolbasson)
+                            {
+
+                                KelimeBulBasliSonlu(kelime, txtuzunlugu - kbsbasson.Length, kelimeuzunluguu, 1);
+
+                            }
+                            else
+                            {
+                                KelimeBulBasliSonlu(kelime, txtuzunlugu, kelimeuzunluguu, 0);
+                            }
+
+                        }
+                       
+
+                    }
+
+                    else
+                    {
+                        if (checkBoxJoker.Checked == true)
+                        {
+                            Joker();
+                            KelimeBulJoker(kelime, txtuzunlugu, kelimeuzunluguu);
+                        }
+
+                        else
+                        {
+                            KelimeBul(kelime, txtuzunlugu, kelimeuzunluguu);
+                        }
+                    }
+                   
+
+                }
+//Lisanslý Deðilse
+                else
+                {
+                    if (checkBox11.Checked == true)
+                    {
+                        if (txtKBAS.Text != "" || txtKSON.Text != "")
+                        {
+                            if (kontrolbasson)
+                            {
+
+                                KelimeBulBasliSonluLisanssýz(kelime, txtuzunlugu - kbsbasson.Length, kelimeuzunluguu, 1);
+                                
+                            }
+                            else
+                            {
+                                KelimeBulBasliSonluLisanssýz(kelime, txtuzunlugu, kelimeuzunluguu, 0);
+                            }
+
+                        }
+                    }
+                    else if (checkBoxJoker.Checked == true)
+                    {
+                        Joker();
+                        KelimeBulJokerLisanssýz(kelime, txtuzunlugu, kelimeuzunluguu);
+                    }
+
+                    else
+                    {
+                        KelimeBulLisanssýz(kelime, txtuzunlugu, kelimeuzunluguu);
+                    }
+
+                }
+
+
+                
+            }

@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9384D85E-81CC-4EE2-A649-27960B8465A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Azutka_Kelime_Bulucu</RootNamespace>
+    <AssemblyName>Azutka Kelime Bulucu</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1367000840_24139.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="9luKelime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="9luKelime.Designer.cs">
+      <DependentUpon>9luKelime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDuyuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDuyuru.Designer.cs">
+      <DependentUpon>FormDuyuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDuyuru2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDuyuru2.designer.cs">
+      <DependentUpon>FormDuyuru2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkinda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkinda.designer.cs">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hardDisk.cs" />
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LisansKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LisansKontrol.Designer.cs">
+      <DependentUpon>LisansKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="9luKelime.resx">
+      <DependentUpon>9luKelime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDuyuru.resx">
+      <DependentUpon>FormDuyuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDuyuru2.resx">
+      <DependentUpon>FormDuyuru2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkinda.resx">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LisansKontrol.resx">
+      <DependentUpon>LisansKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1366760555_28352.ico" />
+    <Content Include="1367000840_24139.ico" />
+    <Content Include="ED_icon_red_V5.ico" />
+    <None Include="Resources\AzutkaArkaplanSürüm1.png" />
+    <None Include="Resources\AzutkaArkaplanSürüm.png" />
+    <None Include="Resources\    İptal  -down.png" />
+    <None Include="Resources\    İptal  .png" />
+    <None Include="Resources\    Kaydet-down.png" />
+    <None Include="Resources\    Kaydet.png" />
+    <None Include="Resources\save.ico" />
+    <None Include="Resources\    Ayarlar-down.png" />
+    <None Include="Resources\    Ayarlar.png" />
+    <None Include="Resources\    Hakkında-over-1.png" />
+    <None Include="Resources\    Hakkında-1.png" />
+    <None Include="Resources\    Hakkında-over.png" />
+    <None Include="Resources\    Hakkında.png" />
+    <None Include="Resources\Duyuru      -over.png" />
+    <None Include="Resources\Duyuru      .png" />
+    <None Include="Resources\    Güncelle-over.png" />
+    <None Include="Resources\    Güncelle.png" />
+    <None Include="Resources\1375116459_Help.png" />
+    <None Include="Resources\yesil.png" />
+    <None Include="Resources\kırmızı.png" />
+    <None Include="Resources\az3.png" />
+    <None Include="Resources\az2.png" />
+    <None Include="Resources\az.png" />
+    <None Include="Resources\emailFormBackground.png" />
+    <None Include="Resources\1bul2.png" />
+    <None Include="Resources\normalaramaa1.gif" />
+    <None Include="Resources\normalarama1.png" />
+    <None Include="Resources\Manuel Joker-over1.png" />
+    <None Include="Resources\Manuel Joker1.png" />
+    <None Include="Resources\loading491.gif" />
+    <None Include="Resources\Lisanssızkontroltext1.png" />
+    <None Include="Resources\lisanssız1.png" />
+    <None Include="Resources\Lisans-over21.png" />
+    <None Include="Resources\Lisans-over11.png" />
+    <None Include="Resources\Lisans-over3.png" />
+    <None Include="Resources\lisanslı1.png" />
+    <None Include="Resources\Lisanskontroltext1.png" />
+    <None Include="Resources\Lisans21.png" />
+    <None Include="Resources\Lisans11.png" />
+    <None Include="Resources\Lisans3.png" />
+    <None Include="Resources\Kopyala-over1.png" />
+    <None Include="Resources\Kopyala1.png" />
+    <None Include="Resources\Gönder-over1.png" />
+    <None Include="Resources\Gönder1.png" />
+    <None Include="Resources\Gizle-over1.png" />
+    <None Include="Resources\Gizle1.png" />
+    <None Include="Resources\Detaylı Arama-over11.png" />
+    <None Include="Resources\Detaylı Arama-over3.png" />
+    <None Include="Resources\Detaylı Arama11.png" />
+    <None Include="Resources\Detaylı Arama3.png" />
+    <None Include="Resources\Bul-over1.png" />
+    <None Include="Resources\Bul1.png" />
+    <None Include="Resources\Bul   -over1.png" />
+    <None Include="Resources\Bul   1.png" />
+    <None Include="Resources\Bul     -down1.png" />
+    <None Include="Resources\Bul     1.png" />
+    <None Include="Resources\azutkakelime1.png" />
+    <None Include="Resources\Aktive Et-over1.png" />
+    <None Include="Resources\Aktive Et1.png" />
+    <None Include="Resources\1NormalAramao1.png" />
+    <None Include="Resources\1NormalArama1.png" />
+    <None Include="Resources\1lisanso1.png" />
+    <None Include="Resources\1lisans1.png" />
+    <None Include="Resources\1İlk 20 Kelimeyi Gönder-over1.png" />
+    <None Include="Resources\1İlk 20 Kelimeyi Göndero1.png" />
+    <None Include="Resources\1İlk 10 Kelimeyi Göndero1.png" />
+    <None Include="Resources\1İlk 10 Kelimeyi Gönder1.png" />
+    <None Include="Resources\1Hepsini Gönder-over1.png" />
+    <None Include="Resources\1Hepsini Göndero1.png" />
+    <None Include="Resources\1En Uzun Kelimeyi Gönder-over1.png" />
+    <None Include="Resources\1En Uzun Kelimeyi Göndero1.png" />
+    <None Include="Resources\1Bulo1.png" />
+    <None Include="Resources\1bul1.png" />
+    <None Include="Resources\battle1600x1200yeni.png" />
+    <None Include="Resources\Detaylı Arama-over2.png" />
+    <None Include="Resources\Detaylı Arama2.png" />
+    <None Include="Resources\lisanssızkelime.png" />
+    <None Include="Resources\lisanslıkelime.png" />
+    <None Include="Resources\Lisanssızkontroltext.png" />
+    <None Include="Resources\Lisanskontroltext.png" />
+    <None Include="Resources\lisanssız.png" />
+    <None Include="Resources\lisanslı.png" />
+    <None Include="Resources\loading49.gif" />
+    <None Include="Resources\azutkakelime.png" />
+    <None Include="Resources\Gizle-over.png" />
+    <None Include="Resources\Gizle.png" />
+    <None Include="Resources\Lisans-over2.png" />
+    <None Include="Resources\Lisans2.png" />
+    <None Include="Resources\Lisans-over1.png" />
+    <None Include="Resources\Lisans1.png" />
+    <None Include="Resources\Lisans-over.png" />
+    <None Include="Resources\Lisans.png" />
+    <None Include="Resources\Bul-over.png" />
+    <None Include="Resources\Bul.png" />
+    <None Include="Resources\Manuel Joker-over.png" />
+    <None Include="Resources\Manuel Joker.png" />
+    <None Include="Resources\Detaylı Arama-over1.png" />
+    <None Include="Resources\Detaylı Arama1.png" />
+    <None Include="Resources\Detaylı Arama-over.png" />
+    <None Include="Resources\Detaylı Arama.png" />
+    <None Include="Resources\1Bulo.png" />
+    <None Include="Resources\1bul.png" />
+    <None Include="Resources\Kopyala-over.png" />
+    <None Include="Resources\Kopyala.png" />
+    <None Include="Resources\Gönder-over.png" />
+    <None Include="Resources\Gönder.png" />
+    <None Include="Resources\Aktive Et-over.png" />
+    <None Include="Resources\Aktive Et.png" />
+    <None Include="Resources\1NormalAramao.png" />
+    <None Include="Resources\1NormalArama.png" />
+    <None Include="Resources\1lisanso.png" />
+    <None Include="Resources\1lisans.png" />
+    <None Include="Resources\1İlk 20 Kelimeyi Gönder-over.png" />
+    <None Include="Resources\1İlk 20 Kelimeyi Göndero.png" />
+    <None Include="Resources\1İlk 10 Kelimeyi Göndero.png" />
+    <None Include="Resources\1İlk 10 Kelimeyi Gönder.png" />
+    <None Include="Resources\1Hepsini Gönder-over.png" />
+    <None Include="Resources\1Hepsini Göndero.png" />
+    <None Include="Resources\1En Uzun Kelimeyi Gönder-over.png" />
+    <None Include="Resources\1En Uzun Kelimeyi Göndero.png" />
+    <None Include="Resources\Bul     -down.png" />
+    <None Include="Resources\Bul     .png" />
+    <None Include="Resources\normalarama.png" />
+    <None Include="Resources\  Bul   -over.png" />
+    <None Include="Resources\normalaramaa.gif" />
+    <None Include="Resources\  Bul   .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
